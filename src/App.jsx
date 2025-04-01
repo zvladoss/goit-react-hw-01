@@ -2,12 +2,16 @@ import FriendList from "./components/FriendList/FriendList";
 import Profile from "./components/Profile/Profile";
 import userData from "./data/userData.json";
 import friends from "./data/friendList.json";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
+import transactions from "./data/transactions.json";
+import Container from "./components/Container/Container";
 const App = () => {
   return (
-    <div>
+    <Container>
       <Profile {...userData} />
       <FriendList friends={friends} />
-    </div>
+      <TransactionHistory items={transactions} />
+    </Container>
   );
 };
 

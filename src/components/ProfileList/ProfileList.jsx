@@ -1,19 +1,19 @@
-import React from "react";
+import s from "./ProfileList.module.css";
 
 const ProfileList = ({ followers, views, likes }) => {
   return (
     <>
-      <li>
-        <span>Followers</span>
-        <span>{followers}</span>
+      <li className={s.profileListItem}>
+        <span className={s.profileItemTitle}>Followers</span>
+        <span className={s.profileItemValue}>{followers}</span>
       </li>
-      <li>
-        <span>Views</span>
-        <span>{views}</span>
+      <li className={s.profileListItem}>
+        <span className={s.profileItemTitle}>Views</span>
+        <span className={s.profileItemValue}>{views}</span>
       </li>
-      <li>
-        <span>Likes</span>
-        <span>{likes}</span>
+      <li className={s.profileListItem}>
+        <span className={s.profileItemTitle}>Likes</span>
+        <span className={s.profileItemValue}>{likes}</span>
       </li>
     </>
   );
